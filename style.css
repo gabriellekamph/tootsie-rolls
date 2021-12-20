@@ -1,3 +1,8 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 :root {
     /*COLORS*/
     --dark-red: #990024;
@@ -17,6 +22,10 @@
     --mobile-button-main: 18px "arial";
     --mobile-button-disclaimer: 12px "arial";
 
+    --tablet-disclaimer: 25px "arial";
+
+    --desktop-disclaimer: 30px "arial";
+
     --tablet-button-main: bold 30px "arial";
     --tablet-button-disclaimer: bold 25px "arial";
 
@@ -26,7 +35,12 @@
     --mobile-padding-button-disclaimer: 10px 20px;
     --tablet-padding-button-disclaimer: 23px 38px;
 
+    --mobile-padding-cookies: 14px;
+    --tablet-padding-cookies: 34px;
+
 }
+
+/*-----------BUTTONS-----------*/
 button {
     border: none;
     padding: var(--mobile-padding-button-main);
@@ -53,6 +67,8 @@ button {
 .button-disclaimer {
     font: var(--mobile-button-disclaimer);
     padding: var(--mobile-padding-button-disclaimer);
+    margin-right: 14px;
+    margin-top: 14px;
 }
 @media screen and (min-width: 1024px) {
     button {
@@ -62,5 +78,48 @@ button {
     .button-disclaimer {
         font: var(--tablet-button-disclaimer);
         padding: var(--tablet-padding-button-disclaimer);
+        margin-right: 33px;
+        margin-top: 39px;
+    }
+}
+
+/*-----------COOKIES-----------*/
+.cookie-disclaimer {
+    background-color: var(--dark-grey);
+    color: var(--white);
+    padding: var(--mobile-padding-cookies);
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+}
+.cookie-text {
+    font: var(--mobile-disclaimer);
+}
+.more-info {
+    cursor: pointer;
+}
+
+.more-info:hover {
+    color: var(--light-red);
+}
+@media screen and (min-width: 1024px) {
+    .cookie-disclaimer {
+        padding: var(--tablet-padding-cookies);
+    }
+    .cookie-text {
+        font: var(--tablet-disclaimer);
+    }
+    .second-cookie-line {
+        display: block;
+    }
+}
+@media screen and (min-width: 1920px) {
+    .cookie-text {
+        font: var(--desktop-disclaimer);
+    }
+    .cookie-disclaimer {
+        flex-direction: row;
     }
 }
