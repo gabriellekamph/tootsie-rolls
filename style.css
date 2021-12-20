@@ -19,6 +19,7 @@
 
     --mobile-paragraph: 15px "arial";
     --mobile-disclaimer: 15px "arial";
+    --mobile-footer: bold 20px "arial";
     --mobile-button-main: 18px "arial";
     --mobile-button-disclaimer: 12px "arial";
 
@@ -38,6 +39,10 @@
     --mobile-padding-cookies: 14px;
     --tablet-padding-cookies: 34px;
 
+}
+
+li {
+    list-style-type: none;
 }
 
 /*-----------BUTTONS-----------*/
@@ -122,4 +127,20 @@ button {
     .cookie-disclaimer {
         flex-direction: row;
     }
+}
+
+/*FOOTER*/
+footer {
+    background-color: var(--dark-grey);
+    font: var(--mobile-footer);
+    text-transform: uppercase;
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+}
+.footer-logo {
+    width: 124px;
+}
+.social-media {
+    fill: var(--white);
 }
