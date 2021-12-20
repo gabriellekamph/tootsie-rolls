@@ -97,9 +97,7 @@ button {
 
 .cycle-card-heading {
     color: var(--light-red);
-    font-family: Helvetica;
-    font-weight: bold;
-    font-size: 35px;
+    font: var(--mobile-h3);
     margin: 0 30px;
 }
 
