@@ -1,0 +1,103 @@
+:root {
+    /*COLORS*/
+    --dark-red: #990024;
+    --light-red: #E50036;
+    --white: #FCFCFC;
+    --green: #47734E;
+    --light-grey: #DDDDDD;
+    --dark-grey: #333333;
+
+    /*FONTS*/
+    --mobile-h1: bold 40px "arial";
+    --mobile-h2: bold 40px "arial";
+    --mobile-h3: bold 30px "arial";
+
+    --mobile-paragraph: 15px "arial";
+    --mobile-disclaimer: 15px "arial";
+    --mobile-button-main: 18px "arial";
+    --mobile-button-disclaimer: 12px "arial";
+
+    --tablet-button-main: bold 30px "arial";
+    --tablet-button-disclaimer: bold 25px "arial";
+
+    /*PADDING*/
+    --mobile-padding-button-main: 14px 40px;
+    --tablet-padding-button-main: 27px 106px;
+    --mobile-padding-button-disclaimer: 10px 20px;
+    --tablet-padding-button-disclaimer: 23px 38px;
+
+}
+button {
+    border: none;
+    padding: var(--mobile-padding-button-main);
+    border-radius: 10px;
+    font: var(--mobile-button-main);
+    cursor: pointer;
+}
+.button-main {
+    background-color: var(--light-red);
+    color: var(--white);
+}
+.button-main:hover {
+    background-color: var(--dark-red);
+}
+.button-secondary {
+    color: var(--dark-grey);
+    background-color: var(--light-grey);
+    border: solid 1px #B9B9B9;
+}
+.button-secondary:hover {
+    background-color: var(--dark-grey);
+    color: var(--white);
+}
+.button-disclaimer {
+    font: var(--mobile-button-disclaimer);
+    padding: var(--mobile-padding-button-disclaimer);
+}
+@media screen and (min-width: 1024px) {
+    button {
+        font: var(--tablet-button-main);
+        padding: var(--tablet-padding-button-main);
+    }
+    .button-disclaimer {
+        font: var(--tablet-button-disclaimer);
+        padding: var(--tablet-padding-button-disclaimer);
+    }
+}
+
+/* NEWSLETTER SIGN UP SECTION */
+
+.newsletter-wrapper {
+    background-color: #F2F2F2;
+}
+
+.newsletter-content {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+}
+
+.newsletter-heading {
+    font: var(--mobile-h3)
+}
+
+.newsletter-text {
+    margin: 10px 0;
+    font: var(--mobile-disclaimer);
+    color: var(--dark-grey);
+}
+
+#newsletter-input {
+    height: 30px;
+    width: 200px;
+    border: 0px solid #fff;
+    border-radius: 10px;
+    margin: 20px 0;
+    padding-left: 20px;
+}
+
+.red {
+    color: var(--light-red);
+}
