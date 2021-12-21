@@ -14,6 +14,7 @@
 
     --mobile-paragraph: 15px "arial";
     --mobile-disclaimer: 15px "arial";
+    --mobile-footer: bold 20px "arial";
     --mobile-button-main: 18px "arial";
     --mobile-button-disclaimer: 12px "arial";
 
@@ -32,6 +33,10 @@
     --mobile-padding-cookies: 14px;
     --tablet-padding-cookies: 34px;
 
+}
+
+li {
+    list-style-type: none;
 }
 
 /*-----------BUTTONS-----------*/
@@ -170,4 +175,81 @@ button {
 .h3-cycle {
     text-align: center;
 }
+}
+/*FOOTER*/
+footer {
+    background-color: var(--dark-grey);
+    font: var(--mobile-footer);
+    text-transform: uppercase;
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer-logo {
+    width: 124px;
+    order: 2;
+    margin: 50px 0;
+}
+.footer-text-wrapper {
+    order: 1;
+}
+.footer-nav {
+    margin-top: 71px;
+}
+.footer-nav-ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 31px;
+}
+
+.social-media-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 23px;
+    margin-top: 40px;
+}
+.social-media {
+    height: 34px;
+}
+
+@media screen and (min-width: 740px) {
+    .footer-nav {
+        width: 732px;
+        margin-top: 90px;
+    }
+    .footer-nav-ul {
+        flex-direction: row;
+        flex-wrap: wrap;
+        row-gap: 61px;
+        justify-content: center;
+    }
+    .social-media-wrapper {
+        gap: 38px;
+        margin-top: 60px;
+    }
+    .social-media {
+        width: 56px;
+        height: auto;
+    }
+    .footer-logo {
+        width: 324px;
+        margin-top: 95px;
+        margin-bottom: 67px;
+    }
+}
+
+@media screen and (min-width: 1080px) {
+    footer {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .footer-text-wrapper {
+        order: 2;
+    }
+    .footer-logo {
+        order: 1;
+        margin: 200px 0;
+    }
 }
