@@ -1,14 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="cookie-disclaimer">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RedBull</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="menu_bar" id="menu" onclick="onClickMenu()">
+        <span id="bar1" class="bar"></span>
+        <span id="bar2" class="bar"></span>
+        <span id="bar3" class="bar"></span>
+      </div>
+
+      <div class="menu_logo">
+        <a href="#">
+          <img
+            class="menu_logo"
+            src="./Images/redbullcom-logo.svg"
+            alt="redbull-Logo"
+        /></a>
+      </div>
+      
+      <div class="menu_icons">
+        <i class="fas fa-search"></i>
+        <i class="far fa-user"></i>
+      </div>
+
+      <nav class="navbar" id="navbar">
+        <!-- <div id="close">
+          <i class="fas fa-times 3x"></i>
+        </div> -->
+
+        <!-- <div class="menu_cross" id="menu_cross">
+            <span id="cross1" class="cross"></span>
+            <span id="cross2" class="cross"></span>
+        </div> -->
+
+        <div class="menu_links">
+          <ul>
+            <li><a href="#">Hem</a></li>
+            <li><a href="#">Produkter</a></li>
+            <li><a href="#">Events</a></li>
+            <li><a href="#">Om oss</a></li>
+          </ul>
+        </div>
+
+        <div class="menu_logo_footer">
+          <img
+            class="menu_logo_footer"
+            src="./Images/Logo_footer.svg"
+            alt="redbull-Logo"
+          />
+        </div>
+      </nav>
+    </header>
+    <!-- <div class="cookie-disclaimer">
         <div class="cookie-text-wrapper">
             <p class="cookie-text">
                 <span>Genom att klicka "Acceptera" </span>
@@ -21,6 +70,12 @@
             <button class="button-main button-disclaimer">Acceptera</button>
             <button class="button-secondary button-disclaimer">Avvisa</button>
         </div>
-    </div>
-</body>
+    </div> -->
+
+    <script
+      src="https://kit.fontawesome.com/60a30fd00b.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="index.js"></script>
+  </body>
 </html>
