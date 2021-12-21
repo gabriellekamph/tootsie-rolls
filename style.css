@@ -17,6 +17,9 @@
     --mobile-button-main: 18px "arial";
     --mobile-button-disclaimer: 12px "arial";
 
+    --tablet-disclaimer: 25px "arial";
+    --desktop-disclaimer: 30px "arial";
+
     --tablet-button-main: bold 30px "arial";
     --tablet-button-disclaimer: bold 25px "arial";
 
@@ -26,7 +29,13 @@
     --mobile-padding-button-disclaimer: 10px 20px;
     --tablet-padding-button-disclaimer: 23px 38px;
 
+    --mobile-padding-cookies: 14px;
+    --tablet-padding-cookies: 34px;
+
 }
+
+/*-----------BUTTONS-----------*/
+
 button {
     border: none;
     padding: var(--mobile-padding-button-main);
@@ -53,6 +62,8 @@ button {
 .button-disclaimer {
     font: var(--mobile-button-disclaimer);
     padding: var(--mobile-padding-button-disclaimer);
+    margin-right: 14px;
+    margin-top: 14px;
 }
 @media screen and (min-width: 1024px) {
     button {
@@ -100,4 +111,99 @@ button {
 
 .red {
     color: var(--light-red);
+}
+
+/*-----------COOKIES-----------*/
+.cookie-disclaimer {
+    background-color: var(--dark-grey);
+    color: var(--white);
+    padding: var(--mobile-padding-cookies);
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+}
+.cookie-text {
+    font: var(--mobile-disclaimer);
+}
+.more-info {
+    cursor: pointer;
+}
+
+.more-info:hover {
+    color: var(--light-red);
+}
+
+@media screen and (min-width: 1024px) {
+    .cookie-disclaimer {
+        padding: var(--tablet-padding-cookies);
+    }
+    .cookie-text {
+        font: var(--tablet-disclaimer);
+    }
+    .second-cookie-line {
+        display: block;
+    }
+}
+@media screen and (min-width: 1920px) {
+    .cookie-text {
+        font: var(--desktop-disclaimer);
+    }
+    .cookie-disclaimer {
+        flex-direction: row;
+    }
+}
+
+/* CARDS WITH RECYCLE PROCESS */
+
+.cycle-wrapper {
+    width: 100vw;
+    margin: 30px;
+}
+
+.cycle-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.cycle-card {
+    max-width: 300px;
+    max-height: 400px;
+    border: 2px solid #000;
+    border-radius: 24px;
+    background-color: #fff;
+    padding: 8px 0 30px 8px;
+    margin: 0 30px 50px 0;
+    filter: drop-shadow(0 5px 10px rgb(107, 107, 107));
+    cursor: pointer;
+}
+
+.cycle-card:hover { 
+    transform: scale(1.2); 
+}
+
+.cycle-card-heading {
+    color: var(--light-red);
+    font: var(--mobile-h3);
+    margin: 0 30px;
+}
+
+.cycle-card-text {
+    font-family: Arial;
+    font-size: 20px;
+    margin: 15px 30px;
+}
+
+.h3-cycle {
+    font: var(--mobile-h3);
+    text-align: left;
+}
+
+@media screen and (min-width: 1024px) {
+.h3-cycle {
+    text-align: center;
+}
 }
