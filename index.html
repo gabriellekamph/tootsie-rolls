@@ -8,10 +8,14 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-
     <!-------- HEADER -------->
     <header class="header">
-      <div class="menu_bar" id="menu" onclick="onClickMenu()">
+      <div
+        class="menu_bar"
+        id="menu"
+        onclick="onClickMenu()"
+        onkeypress="onClickMenu()"
+      >
         <span id="bar1" class="bar"></span>
         <span id="bar2" class="bar"></span>
         <span id="bar3" class="bar"></span>
@@ -25,7 +29,7 @@
             alt="redbull-Logo"
         /></a>
       </div>
-      
+
       <div class="menu_icons">
         <i class="fas fa-search"></i>
         <i class="far fa-user"></i>
