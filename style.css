@@ -129,8 +129,6 @@ button {
 
 /*-----------HEADER-----------*/
 
-/* OOOOBSSS */
-
 header {
   position: relative;
   display: flex;
@@ -167,13 +165,11 @@ header i {
 
 .change #bar1 {
   transform: translateY(4px) rotateZ(-45deg);
-  background-color: rgb(209, 0, 59);
-
+  background-color: var(--light-red);
 }
 .change #bar3 {
   transform: translateY(-12px) rotate(45deg);
-  background-color: rgb(209, 0, 59);
-
+  background-color: var(--light-red);
 }
 .change #bar2 {
   opacity: 0;
@@ -220,26 +216,9 @@ header i {
   display: flex;
 }
 
-/* .menu_cross {
-    position: absolute;
-    top: 0.75rem;
-    left: 1rem;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 40px;
-    height: 40px;
-    cursor: pointer;
-  
-  }
-  
-  .menu_cross .cross1 {
-    height: 4px;
-    width: 100%;
-    background-color: rgb(243, 2, 2);
-    border-radius: 10px;
-    display: flex;
-    margin-top: 8px;
-  } */
+.menu_links ul {
+  margin-top: 40px;
+}
 
 .menu_links li {
   list-style: none;
@@ -248,26 +227,42 @@ header i {
 .menu_links li a {
   display: block;
   text-decoration: none;
-  color: rgb(209, 0, 59);
-  padding: 0.7rem;
+  color: var(--light-red);
+  padding: 1rem;
   font-family: Helvetica Neue;
-  font-size: 30px;
+  font-size: 35px;
 }
 
 .navbar .menu_logo_footer {
   width: 260px;
-  margin-top: 40px;
+  margin-top: 2rem;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 500px) {
   .menu_logo {
     width: 115px;
     display: flex;
+    margin-left: 20px;
   }
 
   .navbar {
     height: 100vh;
     width: 100vw;
     background-color: var(--dark-grey);
+    align-items: center;
+    justify-content: center;
+  }
+
+  .navbar ul {
+    margin-top: 2rem;
+  }
+
+  .menu_links li a {
+    text-align: center;
+  }
+
+  .navbar .menu_logo_footer {
+    width: 180px;
+    margin-top: 7rem;
   }
 }
