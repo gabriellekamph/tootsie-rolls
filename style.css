@@ -245,6 +245,7 @@ footer {
 
 .h3-cycle {
     font: var(--mobile-h3);
+    color: var(--dark-grey);
     text-align: left;
     margin-bottom: 30px;
 }
@@ -430,3 +431,65 @@ footer {
         margin: 200px 0;
     }
 }
+
+/* SECTION UNDER HERO WITH INFO ABOUT NEW TASTE */
+
+.new-taste-content {
+    padding: 20px;
+    display: flex;
+    max-width: 400px; 
+}
+
+.h3-new-taste {
+    font: var(--mobile-h3);
+    color: var(--dark-grey);
+    margin: 30px 0;
+}
+
+.new-taste-text {
+    margin: 20px 0;
+    font: var(--mobile-disclaimer);
+    color: var(--dark-grey);
+}
+
+.new-taste-img {
+    display: none;
+}
+
+@media screen and (min-width: 740px) {
+
+    .new-taste-wrapper {
+        justify-content: center;
+        margin: auto;
+        width: 90%;
+    }
+
+    .new-taste-content {
+        max-width: 850px;
+    }
+
+    .h3-new-taste {
+        width: 85%;
+    }
+
+    .new-taste-text {
+        margin: 20px 0;
+        font: var(--tablet-disclaimer);
+        color: var(--dark-grey);
+    }
+
+    .new-taste-img {
+        display: inline;
+        margin: 0 -70px 0 -40px;
+    }
+}
+
+@media screen and (min-width: 1080px) {
+
+.new-taste-content {
+    margin: auto;
+}
+
+}
+
+
