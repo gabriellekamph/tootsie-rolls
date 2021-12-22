@@ -629,9 +629,9 @@ footer {
 
 @media screen and (min-width: 1080px) {
 
-.new-taste-content {
-    margin: auto;
-}
+    .new-taste-content {
+        margin: auto;
+    }
 
 }
 
