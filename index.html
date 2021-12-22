@@ -1,13 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RedBull</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-------- HEADER -------->
+    <header class="header">
+      <div
+        class="menu_bar"
+        id="menu"
+        onclick="onClickMenu()"
+        onkeypress="onClickMenu()"
+      >
+        <span id="bar1" class="bar"></span>
+        <span id="bar2" class="bar"></span>
+        <span id="bar3" class="bar"></span>
+      </div>
+
+      <div class="menu_logo">
+        <a href="#">
+          <img
+            class="menu_logo"
+            src="./Images/redbullcom-logo.svg"
+            alt="redbull-Logo"
+        /></a>
+      </div>
+
+      <div class="menu_icons">
+        <i class="fas fa-search"></i>
+        <i class="far fa-user"></i>
+      </div>
+      <!-------- NAVBAR -------->
+      <nav class="navbar" id="navbar">
+        <div class="menu_links">
+          <ul>
+            <li><a href="#">Hem</a></li>
+            <li><a href="#">Produkter</a></li>
+            <li><a href="#">Events</a></li>
+            <li><a href="#">Om oss</a></li>
+          </ul>
+        </div>
+
+        <div class="menu_logo_footer">
+          <img
+            class="menu_logo_footer"
+            src="./Images/Logo_footer.svg"
+            alt="redbull-Logo"
+          />
+        </div>
+      </nav>
+    </header>
+
     <main>
         <!--------------- SECTION WITH RECYCLE PROCESS ------------------>
 
@@ -55,22 +102,10 @@
         </section>
     </main>
 
-        <!-------------------- COOKIE DISCLAIMER ----------------------->
+  
 
-    <div class="cookie-disclaimer">
-        <div class="cookie-text-wrapper">
-            <p class="cookie-text">
-                <span>Genom att klicka "Acceptera" </span>
-                <span class="second-cookie-line">
-                    godkänner du vår användning av cookies - mer information finns 
-                    <strong class="more-info">här</strong>.</span>
-            </p>
-        </div>
-        <div class="cookie-button-wrapper">
-            <button class="button-main button-disclaimer">Acceptera</button>
-            <button class="button-secondary button-disclaimer">Avvisa</button>
-        </div>
-    </div>
+                <!-------------------- FOOTER ----------------------->
+
     <footer>
         <img src="./img/redbull_logo_footer.svg" alt="Redbull logo" class="footer-logo">
         <div class="footer-text-wrapper">
@@ -94,6 +129,31 @@
             </nav>
         </div>
     </footer>
-    <div class="cookie-disclaimer"><div class="cookie-text-wrapper"><p class="cookie-text"><span>Genom att klicka "Acceptera" </span><span class="second-cookie-line">godkänner du vår användning av cookies - mer information finns <strong class="more-info">här</strong>.</span></p></div><div class="cookie-button-wrapper"><button class="button-main button-disclaimer">Acceptera</button><button class="button-secondary button-disclaimer">Avvisa</button></div></div>
+
+            <!-------------------- COOKIE DISCLAIMER ----------------------->
+
+            <div class="cookie-disclaimer">
+                <div class="cookie-text-wrapper">
+                    <p class="cookie-text">
+                        <span>Genom att klicka "Acceptera" </span>
+                        <span class="second-cookie-line">
+                            godkänner du vår användning av cookies - mer information finns 
+                            <strong class="more-info">här</strong>.</span>
+                    </p>
+                </div>
+                <div class="cookie-button-wrapper">
+                    <button class="button-main button-disclaimer">Acceptera</button>
+                    <button class="button-secondary button-disclaimer">Avvisa</button>
+                </div>
+            </div> 
+
+
 </body>
+
+<script
+src="https://kit.fontawesome.com/60a30fd00b.js"
+crossorigin="anonymous"
+></script>
+<script src="index.js"></script>
+
 </html>
