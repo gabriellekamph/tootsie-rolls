@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920" height="163" viewBox="0 0 1920 163">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_1" data-name="Rectangle 1" width="1920" height="163" transform="translate(0 917)" fill="#fff"/>
+    </clipPath>
+  </defs>
+  <g id="hero-wave-desktop" transform="translate(0 -917)" clip-path="url(#clip-path)">
+    <path id="Path_1" data-name="Path 1" d="M0,8.9S18.033-39.894,229.382-66.962c80.571-10.319,189.766-17.48,337.136-17.48,237.281,0,392.407,32.417,787.539,93.338s774.024,0,774.024,0V1021.4H0Z" transform="translate(-104 1001.442)" fill="#fff"/>
+  </g>
+</svg>
