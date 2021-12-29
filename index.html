@@ -25,14 +25,14 @@
         <a href="#">
           <img
             class="menu_logo"
-            src="./Images/redbullcom-logo.svg"
+            src="./img/redbullcom-logo.svg"
             alt="redbull-Logo"
         /></a>
       </div>
 
       <div class="menu_icons">
-        <i class="fas fa-search"></i>
-        <i class="far fa-user"></i>
+        <img class="icons" src="./img/user.png" alt="användare" />
+        <img class="icons" src="./img/search.png" alt="förstoringsglas" />
       </div>
       <!-------- NAVBAR -------->
       <nav class="navbar" id="navbar">
@@ -48,7 +48,7 @@
         <div class="menu_logo_footer">
           <img
             class="menu_logo_footer"
-            src="./Images/Logo_footer.svg"
+            src="./img/Logo_footer.svg"
             alt="redbull-Logo"
           />
         </div>
@@ -56,118 +56,157 @@
     </header>
 
     <main>
-        <!------- SECTION UNDER HERO WITH INFO ABOUT NEW TASTE ---------->
-        <section class="new-taste-wrapper">
-            <div class="new-taste-content">
-                <article class="new-taste-img">
-                    <img src="img/redbull-green.png" width="400" alt="green red bull can">
-                </article>
-                <article>
-                    <h3 class="h3-new-taste">En ny smak med nya smakupplevelser</h3>
-                    <p class="new-taste-text">
-                        Red Bull &lt; Code Boost &gt; livar upp kropp och sinne med exceptionell smak av Ananas Yuzu. Denna dryck gör dig fokuserad och ger dig viiiiingar! Formeln för Red Bull &lt; Code Boost &gt; innehåller en unik kombination av ingredienser av hög kvalitet. 
-                    </p>
-                </article>
-            </div>
-        </section>
+      <!------- HERO SECTION ---------->
+      <section class="hero">Hero</section>
 
-        <!--------------- SECTION WITH RECYCLE PROCESS ------------------>
-        <section class="cycle-wrapper">
-            <h3 class="h3-cycle">Burkens kretslopp</h3>
-            <section class="cycle-content">
-                <article class="cycle-card">
-                    <img src="img/panta.png" width="280" alt="person recycling cans">
-                    <p class="cycle-card-heading">Panta</p>
-                    <p class="cycle-card-text">Allt börjar med det rätta kastet</p>
-                </article>
-                <article class="cycle-card">
-                    <img src="img/recycle.png" width="280" alt="recycling process">
-                    <p class="cycle-card-heading">Återvinn</p>
-                    <p class="cycle-card-text">Och sen raka vägen till återvinningen</p>
-                </article>
-                <article class="cycle-card">
-                    <img src="img/produce.png" width="280" alt="showing how cans are reproduced">
-                    <p class="cycle-card-heading">Producera</p>
-                    <p class="cycle-card-text">Vi producerar och fyller - på ett och samma ställe</p>
-                </article>
-                <article class="cycle-card">
-                    <img src="img/transport.png" width="280" alt="showing how recycled cans are transported by train">
-                    <p class="cycle-card-heading">Transportera</p>
-                    <p class="cycle-card-text">Och så skickas de iväg, med tåg i den mån det går</p>
-                </article>
-            </section>
-        </section>
+      <!------- SECTION UNDER HERO WITH INFO ABOUT NEW TASTE ---------->
+      <section class="new-taste-wrapper">
+        <div class="new-taste-content">
+          <article class="new-taste-img">
+            <img
+              src="img/redbull-green.png"
+              width="400"
+              alt="green red bull can"
+            />
+          </article>
+          <article>
+            <h3 class="h3-new-taste">En ny smak med nya smakupplevelser</h3>
+            <p class="new-taste-text">
+              Red Bull &lt; Code Boost &gt; livar upp kropp och sinne med
+              exceptionell smak av Ananas Yuzu. Denna dryck gör dig fokuserad
+              och ger dig viiiiingar! Formeln för Red Bull &lt; Code Boost &gt;
+              innehåller en unik kombination av ingredienser av hög kvalitet.
+            </p>
+          </article>
+        </div>
+      </section>
 
-        <!------------- SECTION WITH NEWSLETTER SIGN UP ---------------->
-
-        <section class="newsletter-wrapper">
-            <div class="newsletter-content">
-                <form>
-                    <h3 class="newsletter-heading">
-                        Anmäl dig till Red Bulls nyhetsbrev och få en kupong på <span class="newsletter-text-red">15% rabatt.</span>
-                    </h3>
-                    <input type="text" id="newsletter-input" placeholder="Fyll i din e-postadress">
-                    <button class="button-main newsletter-button">Prenumerera</button>
-                </form>
-                <span class="newsletter-text">
-                    Anmäl mig till nyhetsbrevet. Jag samtycker till användningen av mina personuppgifter enligt integritetspolicyn.
-                </span>
-            </div>
+      <!--------------- SECTION WITH RECYCLE PROCESS ------------------>
+      <section class="cycle-wrapper">
+        <h3 class="h3-cycle">Burkens kretslopp</h3>
+        <section class="cycle-content">
+          <article class="cycle-card">
+            <img src="img/panta.png" width="280" alt="person recycling cans" />
+            <p class="cycle-card-heading">Panta</p>
+            <p class="cycle-card-text">Allt börjar med det rätta kastet</p>
+          </article>
+          <article class="cycle-card">
+            <img src="img/recycle.png" width="280" alt="recycling process" />
+            <p class="cycle-card-heading">Återvinn</p>
+            <p class="cycle-card-text">Och sen raka vägen till återvinningen</p>
+          </article>
+          <article class="cycle-card">
+            <img
+              src="img/produce.png"
+              width="280"
+              alt="showing how cans are reproduced"
+            />
+            <p class="cycle-card-heading">Producera</p>
+            <p class="cycle-card-text">
+              Vi producerar och fyller - på ett och samma ställe
+            </p>
+          </article>
+          <article class="cycle-card">
+            <img
+              src="img/transport.png"
+              width="280"
+              alt="showing how recycled cans are transported by train"
+            />
+            <p class="cycle-card-heading">Transportera</p>
+            <p class="cycle-card-text">
+              Och så skickas de iväg, med tåg i den mån det går
+            </p>
+          </article>
         </section>
+      </section>
+
+      <!------------- SECTION WITH NEWSLETTER SIGN UP ---------------->
+
+      <section class="newsletter-wrapper">
+        <div class="newsletter-content">
+          <form>
+            <h3 class="newsletter-heading">
+              Anmäl dig till Red Bulls nyhetsbrev och få en kupong på
+              <span class="newsletter-text-red">15% rabatt.</span>
+            </h3>
+            <input
+              type="text"
+              id="newsletter-input"
+              placeholder="Fyll i din e-postadress"
+            />
+            <button class="button-main newsletter-button">Prenumerera</button>
+          </form>
+          <span class="newsletter-text">
+            Anmäl mig till nyhetsbrevet. Jag samtycker till användningen av mina
+            personuppgifter enligt integritetspolicyn.
+          </span>
+        </div>
+      </section>
     </main>
 
-  
-
-                <!-------------------- FOOTER ----------------------->
+    <!-------------------- FOOTER ----------------------->
 
     <footer>
-        <img src="./img/redbull_logo_footer.svg" alt="Redbull logo" class="footer-logo">
-        <div class="footer-text-wrapper">
-            <nav class="footer-nav">
-                <ul class="footer-nav-ul">
-                    <li>privacy policy</li>
-                    <li>terms of use</li>
-                    <li>products & company</li>
-                    <li>imprint</li>
-                    <li>brand protection</li>
-                    <li>fraud warning</li>
-                    <li>media</li>
-                    <li>contact us</li>
-                </ul>
-                <div class="social-media-wrapper">
-                    <img src="./img/Icon-awesome-facebook-square.svg" alt="the facebook logo" class="social-media">
-                    <img src="./img/Icon-awesome-instagram.svg" alt="the instagram logo" class="social-media">
-                    <img src="./img/Icon-awesome-twitter.svg" alt="the twitter logo" class="social-media">
-                    
-                </div>
-            </nav>
-        </div>
+      <img
+        src="./img/redbull_logo_footer.svg"
+        alt="Redbull logo"
+        class="footer-logo"
+      />
+      <div class="footer-text-wrapper">
+        <nav class="footer-nav">
+          <ul class="footer-nav-ul">
+            <li>privacy policy</li>
+            <li>terms of use</li>
+            <li>products & company</li>
+            <li>imprint</li>
+            <li>brand protection</li>
+            <li>fraud warning</li>
+            <li>media</li>
+            <li>contact us</li>
+          </ul>
+          <div class="social-media-wrapper">
+            <img
+              src="./img/Icon-awesome-facebook-square.svg"
+              alt="the facebook logo"
+              class="social-media"
+            />
+            <img
+              src="./img/Icon-awesome-instagram.svg"
+              alt="the instagram logo"
+              class="social-media"
+            />
+            <img
+              src="./img/Icon-awesome-twitter.svg"
+              alt="the twitter logo"
+              class="social-media"
+            />
+          </div>
+        </nav>
+      </div>
     </footer>
 
-            <!-------------------- COOKIE DISCLAIMER ----------------------->
+    <!-------------------- COOKIE DISCLAIMER ----------------------->
 
-            <div class="cookie-disclaimer">
-                <div class="cookie-text-wrapper">
-                    <p class="cookie-text">
-                        <span>Genom att klicka "Acceptera" </span>
-                        <span class="second-cookie-line">
-                            godkänner du vår användning av cookies - mer information finns 
-                            <strong class="more-info">här</strong>.</span>
-                    </p>
-                </div>
-                <div class="cookie-button-wrapper">
-                    <button class="button-main button-disclaimer">Acceptera</button>
-                    <button class="button-secondary button-disclaimer">Avvisa</button>
-                </div>
-            </div> 
+    <div class="cookie-disclaimer">
+      <div class="cookie-text-wrapper">
+        <p class="cookie-text">
+          <span>Genom att klicka "Acceptera" </span>
+          <span class="second-cookie-line">
+            godkänner du vår användning av cookies - mer information finns
+            <strong class="more-info">här</strong>.</span
+          >
+        </p>
+      </div>
+      <div class="cookie-button-wrapper">
+        <button class="button-main button-disclaimer">Acceptera</button>
+        <button class="button-secondary button-disclaimer">Avvisa</button>
+      </div>
+    </div>
+  </body>
 
-
-</body>
-
-<script
-src="https://kit.fontawesome.com/60a30fd00b.js"
-crossorigin="anonymous"
-></script>
-<script src="index.js"></script>
-
+  <script
+    src="https://kit.fontawesome.com/60a30fd00b.js"
+    crossorigin="anonymous"
+  ></script>
+  <script src="index.js"></script>
 </html>
