@@ -187,7 +187,7 @@
 
     <!-------------------- COOKIE DISCLAIMER ----------------------->
 
-    <div class="cookie-disclaimer">
+    <div class="cookie-disclaimer" id="cookies">
       <div class="cookie-text-wrapper">
         <p class="cookie-text">
           <span>Genom att klicka "Acceptera" </span>
@@ -198,8 +198,8 @@
         </p>
       </div>
       <div class="cookie-button-wrapper">
-        <button class="button-main button-disclaimer">Acceptera</button>
-        <button class="button-secondary button-disclaimer">Avvisa</button>
+        <button class="button-main button-disclaimer" onclick="closeCookies()">Acceptera</button>
+        <button class="button-secondary button-disclaimer" onclick="closeCookies()">Avvisa</button>
       </div>
     </div>
   </body>
