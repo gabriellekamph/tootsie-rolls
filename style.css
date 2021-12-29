@@ -532,6 +532,8 @@ header i {
 
   .newsletter-button {
     height: 60px;
+    font: var(--mobile-button-main);
+    padding: var(--mobile-padding-button-main);
   }
 
   .newsletter-heading {
