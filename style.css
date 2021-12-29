@@ -428,7 +428,7 @@ header i {
 
 .cycle-wrapper {
   width: 100vw;
-  margin: 30px;
+  margin: 30px 0;
 }
 
 .cycle-content {
