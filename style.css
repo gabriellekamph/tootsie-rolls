@@ -471,11 +471,13 @@ header i {
   color: var(--dark-grey);
   text-align: left;
   margin-bottom: 30px;
+  margin-left: 20px;
 }
 
 @media screen and (min-width: 1024px) {
   .h3-cycle {
     text-align: center;
+    margin-left: 0px;
   }
 }
 
