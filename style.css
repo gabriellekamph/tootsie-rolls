@@ -137,9 +137,11 @@ button {
   .cookie-disclaimer {
     padding: var(--tablet-padding-cookies);
   }
+
   .cookie-text {
     font: var(--tablet-disclaimer);
   }
+
   .second-cookie-line {
     display: block;
   }
@@ -149,6 +151,7 @@ button {
   .cookie-text {
     font: var(--desktop-disclaimer);
   }
+
   .cookie-disclaimer {
     flex-direction: row;
   }
@@ -534,6 +537,10 @@ header i {
   
   .ingredient-wrapper-text {
     width: 75%;
+  }
+
+  .h3-ingredients {
+    font: var(--mobile-h3);
   }
 }
 
