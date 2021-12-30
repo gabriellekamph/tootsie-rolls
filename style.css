@@ -429,7 +429,7 @@ header i {
 
 .ingredients-wrapper {
     background: #F2F2F2;
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     display: flex;
     font: var(--desktop-h3);
@@ -437,6 +437,7 @@ header i {
 }
 
 .left-ingredients-wrapper {
+    padding:auto;
     margin: auto 100px;
     top: 50%;
     width: 50%;
@@ -459,17 +460,38 @@ header i {
     background: #FDFDFD;
     justify-content: left;
     align-items: center;
-    padding-left: 45px;
     border-radius: 10px;
 }
 
 .ingredient-wrapper-text {
-    width: 90%;
+    padding-left: 10%;
+    width: 80%;
 }
 
-.fa-chevron-down{
-    color: #E50036; 
-}
+@media screen and (max-width: 1080px) {
+    .right-ingredients-wrapper {
+        display: none;
+    }
+  }
+
+  @media screen and (max-width: 740px) {
+
+    .ingredients-wrapper{
+        font-size: 30px;
+    }
+
+    .left-ingredients-wrapper {
+        margin: auto 15px;
+    }
+    .ingredient-wrapper {
+        width: 336px;
+        height: 53px;
+        font-size: 17px;
+    }
+    .ingredient-wrapper-text {
+        width: 75%;
+    }
+  }
 
 /*-----------CARDS WITH RECYCLE PROCESS-----------*/
 
