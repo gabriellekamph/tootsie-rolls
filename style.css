@@ -17,6 +17,7 @@
 
   --desktop-h1: bold 6.25rem "arial";
   --desktop-h2: bold 4.375rem "arial";
+  --desktop-h3: bold 3.0rem "arial";
 
   --tablet-h1: bold 4.375rem "arial";
   --tablet-h2: bold 2.5rem "arial";
@@ -404,6 +405,7 @@ header i {
 
   .h3-new-taste {
     width: 85%;
+    font: var(--tablet-h2);
   }
 
   .new-taste-text {
@@ -421,8 +423,82 @@ header i {
 @media screen and (min-width: 1080px) {
   .new-taste-content {
     margin: auto;
+    font: var(--desktop-h2);
   }
 }
+
+/*----------- INGREDIENTS -----------*/
+
+.ingredients-wrapper {
+    background: #F2F2F2;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    font: var(--desktop-h3);
+    
+}
+
+.left-ingredients-wrapper {
+    padding:auto;
+    margin: auto 100px;
+    top: 50%;
+    width: 50%;
+    color: #333333;
+}
+
+.right-ingredients-wrapper {
+    margin: auto;
+    top: 50%;
+    width: 50%;
+    
+}
+
+.ingredient-wrapper {
+    width: 578px;
+    height: 89px;
+    margin: 45px 0;
+    display: flex;
+    font: var(--mobile-h3);
+    background: #FDFDFD;
+    justify-content: left;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.h3-ingredients {
+    font: var(--desktop-h3);
+    color: var(--dark-grey);
+    }
+
+.ingredient-wrapper-text {
+    padding-left: 10%;
+    width: 80%;
+}
+
+@media screen and (max-width: 1080px) {
+    .right-ingredients-wrapper {
+        display: none;
+    }
+  }
+
+  @media screen and (max-width: 740px) {
+
+    .ingredients-wrapper{
+        font-size: 30px;
+    }
+
+    .left-ingredients-wrapper {
+        margin: auto 15px;
+    }
+    .ingredient-wrapper {
+        width: 336px;
+        height: 53px;
+        font-size: 17px;
+    }
+    .ingredient-wrapper-text {
+        width: 75%;
+    }
+  }
 
 /*-----------CARDS WITH RECYCLE PROCESS-----------*/
 
@@ -474,10 +550,18 @@ header i {
   margin-left: 20px;
 }
 
+@media screen and (min-width: 740px) {
+    .h3-cycle {
+    text-align: center;
+    font: var(--tablet-h2);
+    }
+}
+
 @media screen and (min-width: 1024px) {
   .h3-cycle {
     text-align: center;
     margin-left: 0px;
+    font: var(--desktop-h2);
   }
 }
 
