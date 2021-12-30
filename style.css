@@ -119,10 +119,12 @@ button {
   position: fixed;
   bottom: 0;
   width: 100vw;
+  justify-content: space-evenly;
 }
 
 .cookie-text {
   font: var(--mobile-disclaimer);
+  width: 70%;
 }
 
 .more-info {
@@ -133,27 +135,40 @@ button {
   color: var(--light-red);
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 740px) {
+
   .cookie-disclaimer {
     padding: var(--tablet-padding-cookies);
   }
 
   .cookie-text {
+    width: 80%;
     font: var(--tablet-disclaimer);
   }
+}
 
-  .second-cookie-line {
-    display: block;
+@media screen and (min-width: 1024px) {
+  .cookie-disclaimer {
+    padding: var(--tablet-padding-cookies);
+    flex-direction: column;
+  }
+
+  .cookie-text {
+    font: var(--tablet-disclaimer);
+    width: 70%;
+    padding-top: 30px;
   }
 }
 
 @media screen and (min-width: 1920px) {
   .cookie-text {
     font: var(--desktop-disclaimer);
+    width: 100%;
   }
 
   .cookie-disclaimer {
     flex-direction: row;
+    align-items: center;
   }
 }
 
