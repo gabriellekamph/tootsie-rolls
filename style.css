@@ -17,10 +17,11 @@
 
   --desktop-h1: bold 6.25rem "arial";
   --desktop-h2: bold 4.375rem "arial";
-  --desktop-h3: bold 3.0rem "arial";
+  --desktop-h3: bold 2.5rem "arial";
 
   --tablet-h1: bold 4.375rem "arial";
   --tablet-h2: bold 2.5rem "arial";
+  --tablet-h3: bold 2.5rem "arial";
 
   --mobile-paragraph: 15px "arial";
   --mobile-disclaimer: 15px "arial";
@@ -423,7 +424,7 @@ header i {
 @media screen and (min-width: 1080px) {
   .new-taste-content {
     margin: auto;
-    font: var(--desktop-h2);
+    font: var(--desktop-h3);
   }
 }
 
@@ -466,9 +467,9 @@ header i {
 }
 
 .h3-ingredients {
-    font: var(--desktop-h3);
+    font: var(--tablet-h3);
     color: var(--dark-grey);
-    }
+}
 
 .ingredient-wrapper-text {
     padding-left: 10%;
@@ -553,7 +554,7 @@ header i {
 @media screen and (min-width: 740px) {
     .h3-cycle {
     text-align: center;
-    font: var(--tablet-h2);
+    font: var(--tablet-h3);
     }
 }
 
@@ -561,7 +562,7 @@ header i {
   .h3-cycle {
     text-align: center;
     margin-left: 0px;
-    font: var(--desktop-h2);
+    font: var(--desktop-h3);
   }
 }
 
