@@ -375,7 +375,7 @@ header i {
 .hero-wave {
   width: 100%;
   position: absolute;
-  bottom: 0;
+  bottom: -1px;
 }
 
 @media screen and (min-width: 740px) {
