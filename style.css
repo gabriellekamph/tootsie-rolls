@@ -516,22 +516,24 @@ header i {
 
 #newsletter-input {
   height: 47px;
-  min-width: 250px;
+  width: 60%;
   border: 0px solid #fff;
   border-radius: 10px;
-  margin: 20px 0;
+  margin: 20px 20px;
   padding-left: 20px;
 }
 
 @media screen and (min-width: 740px) {
   #newsletter-input {
     height: 60px;
-    width: 50%;
+    width: 60%;
     margin-right: 30px;
   }
 
   .newsletter-button {
     height: 60px;
+    font: var(--mobile-button-main);
+    padding: var(--mobile-padding-button-main);
   }
 
   .newsletter-heading {
@@ -552,7 +554,7 @@ header i {
 
   #newsletter-input {
     height: 60px;
-    width: 70%;
+    width: 50%;
     margin-right: 30px;
   }
 
