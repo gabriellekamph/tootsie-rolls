@@ -9,7 +9,9 @@
   /* COLORS */
 
   --dark-red: #990024;
-  --light-red: #d91f4b;
+  --light-red: #d91f4b; /*The light red color was changed to better match the design,
+                            since Adobe uses a different color space than browsers.
+                            The original color was #E50036 */
   --white: #fcfcfc;
   --green: #47734e;
   --light-grey: #dddddd;
