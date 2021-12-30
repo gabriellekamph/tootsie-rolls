@@ -1,11 +1,17 @@
+// FUNCTION TO TOGGLE MENU
+
 function onClickMenu() {
   document.getElementById("menu").classList.toggle("change");
   document.getElementById("navbar").classList.toggle("active");
 }
 
+// FUNCTION TO CLOSE COOKIES BAR
+
 function closeCookies() {
   document.getElementById("cookies").style.display = "none";
 }
+
+// FUNCTION TO CREATE WAVE IN HERO SECTION
 
 const hero = document.querySelector(".hero");
 let heroWave = document.createElement("img");
