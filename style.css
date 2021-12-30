@@ -2,15 +2,21 @@
   margin: 0;
   padding: 0;
 }
+
+/* ------------------ VARIABLES ------------------ */
 :root {
-  /*COLORS*/
+
+  /* COLORS */
+
   --dark-red: #990024;
   --light-red: #d91f4b;
   --white: #fcfcfc;
   --green: #47734e;
   --light-grey: #dddddd;
   --dark-grey: #333333;
-  /*FONTS*/
+
+  /* FONTS */
+
   --mobile-h1: bold 2.5rem "arial";
   --mobile-h2: bold 1.25rem "arial";
   --mobile-h3: bold 30px "arial";
@@ -34,7 +40,8 @@
   --tablet-button-main: bold 30px "arial";
   --tablet-button-disclaimer: bold 25px "arial";
 
-  /*PADDING*/
+  /* PADDING */
+
   --mobile-padding-button-main: 14px 40px;
   --tablet-padding-button-main: 27px 106px;
   --mobile-padding-button-disclaimer: 10px 20px;
@@ -50,7 +57,8 @@ li {
   list-style-type: none;
 }
 
-/*-----------BUTTONS-----------*/
+/* ------------------ BUTTONS ------------------ */
+
 button {
   border: none;
   padding: var(--mobile-padding-button-main);
@@ -58,22 +66,27 @@ button {
   font: var(--mobile-button-main);
   cursor: pointer;
 }
+
 .button-main {
   background-color: var(--light-red);
   color: var(--white);
 }
+
 .button-main:hover {
   background-color: var(--dark-red);
 }
+
 .button-secondary {
   color: var(--dark-grey);
   background-color: var(--light-grey);
   border: solid 1px #b9b9b9;
 }
+
 .button-secondary:hover {
   background-color: var(--dark-grey);
   color: var(--white);
 }
+
 .button-disclaimer {
   font: var(--mobile-button-disclaimer);
   padding: var(--mobile-padding-button-disclaimer);
@@ -86,6 +99,7 @@ button {
     font: var(--tablet-button-main);
     padding: var(--tablet-padding-button-main);
   }
+
   .button-disclaimer {
     font: var(--tablet-button-disclaimer);
     padding: var(--tablet-padding-button-disclaimer);
@@ -93,7 +107,9 @@ button {
     margin-top: 39px;
   }
 }
-/*-----------COOKIES-----------*/
+
+/* ------------------ COOKIES POP-UP ------------------ */
+
 .cookie-disclaimer {
   background-color: var(--dark-grey);
   color: var(--white);
@@ -104,15 +120,19 @@ button {
   bottom: 0;
   width: 100vw;
 }
+
 .cookie-text {
   font: var(--mobile-disclaimer);
 }
+
 .more-info {
   cursor: pointer;
 }
+
 .more-info:hover {
   color: var(--light-red);
 }
+
 @media screen and (min-width: 1024px) {
   .cookie-disclaimer {
     padding: var(--tablet-padding-cookies);
@@ -124,6 +144,7 @@ button {
     display: block;
   }
 }
+
 @media screen and (min-width: 1920px) {
   .cookie-text {
     font: var(--desktop-disclaimer);
@@ -133,7 +154,7 @@ button {
   }
 }
 
-/*-----------HEADER-----------*/
+/* ------------------ HEADER SECTION ------------------ */
 
 header {
   position: relative;
@@ -166,6 +187,7 @@ header i {
 #bar1 {
   transform: translateY(-4px);
 }
+
 #bar3 {
   transform: translateY(4px);
 }
@@ -174,10 +196,12 @@ header i {
   transform: translateY(5px) rotateZ(-45deg);
   background-color: var(--light-red);
 }
+
 .change #bar3 {
   transform: translateY(-13px) rotate(45deg);
   background-color: var(--light-red);
 }
+
 .change #bar2 {
   opacity: 0;
 }
@@ -197,6 +221,7 @@ header i {
   top: 1rem;
   right: 1rem;
 }
+
 .icons {
   margin-right: 30px;
   height: 30px;
@@ -215,7 +240,7 @@ header i {
   left: 3.5rem;
 }
 
-/*-----------HEADER NAVBAR-----------*/
+/* ------------------ HEADER NAVBAR ------------------ */
 
 .navbar {
   height: 100vh;
@@ -230,6 +255,7 @@ header i {
   left: 0;
   z-index: 2;
 }
+
 .navbar.active {
   display: flex;
   transition: opacity 0.8s ease-in-out;
@@ -294,7 +320,8 @@ header i {
   }
 }
 
-/****** HERO ******/
+/* ------------------ HERO SECTION ------------------ */
+
 .hero {
   background-color: var(--green);
   background: url("./img/hero-mobile-no-wave.png");
@@ -308,6 +335,7 @@ header i {
   /* justify-content: center; */
   position: relative;
 }
+
 .hero-h1 {
   font: var(--mobile-h1);
   color: var(--white);
@@ -315,17 +343,20 @@ header i {
   margin-bottom: 2vh;
   /* margin-left: 10%; */
 }
+
 .hero-h2 {
   font: var(--mobile-h2);
   color: var(--white);
   /* margin-left: 10%; */
 }
+
 .button-hero {
   /* margin-left: 10%; */
   width: fit-content;
   margin-top: 5vh;
   font-weight: bold;
 }
+
 .hero-wave {
   width: 100%;
   /* max-height: 147px; */
@@ -342,34 +373,39 @@ header i {
     align-items: flex-start;
     justify-content: center;
   }
+
   .hero-h1 {
     font: var(--tablet-h1);
     margin-left: 10%;
   }
+
   .hero-h2 {
     font: var(--tablet-h2);
     margin-left: 10%;
     margin-top: 25px;
   }
+
   .button-hero {
     margin-left: 10%;
     margin-top: 55px;
   }
 }
+
 @media screen and (min-width: 1400px) {
   .hero-h1 {
     font: var(--desktop-h1);
   }
+
   .hero-h2 {
     font: var(--desktop-h2);
   }
+
   .button-hero {
     margin-top: 30px;
   }
 }
 
-
-/*-----------SECTION UNDER HERO WITH INFO ABOUT NEW TASTE-----------*/
+/* ----------- SECTION WITH INFO ABOUT NEW TASTE -----------*/
 
 .new-taste-content {
   padding: 20px;
@@ -428,80 +464,80 @@ header i {
   }
 }
 
-/*----------- INGREDIENTS -----------*/
+/* ------------------ SECTION WITH INGREDIENTS ------------------ */
 
 .ingredients-wrapper {
-    background: #F2F2F2;
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    font: var(--desktop-h3);
-    
+  background: #F2F2F2;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  font: var(--desktop-h3);
 }
 
 .left-ingredients-wrapper {
-    padding:auto;
-    margin: auto 100px;
-    top: 50%;
-    width: 50%;
-    color: #333333;
+  padding:auto;
+  margin: auto 100px;
+  top: 50%;
+  width: 50%;
+  color: #333333;
 }
 
 .right-ingredients-wrapper {
-    margin: auto;
-    top: 50%;
-    width: 50%;
-    
+  margin: auto;
+  top: 50%;
+  width: 50%;  
 }
 
 .ingredient-wrapper {
-    width: 578px;
-    height: 89px;
-    margin: 45px 0;
-    display: flex;
-    font: var(--mobile-h3);
-    background: #FDFDFD;
-    justify-content: left;
-    align-items: center;
-    border-radius: 10px;
+  width: 578px;
+  height: 89px;
+  margin: 45px 0;
+  display: flex;
+  font: var(--mobile-h3);
+  background: #FDFDFD;
+  justify-content: left;
+  align-items: center;
+  border-radius: 10px;
 }
 
 .h3-ingredients {
-    font: var(--tablet-h3);
-    color: var(--dark-grey);
+  font: var(--tablet-h3);
+  color: var(--dark-grey);
 }
 
 .ingredient-wrapper-text {
-    padding-left: 10%;
-    width: 80%;
+  padding-left: 10%;
+  width: 80%;
 }
 
 @media screen and (max-width: 1080px) {
-    .right-ingredients-wrapper {
-        display: none;
-    }
+  .right-ingredients-wrapper {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 740px) {
+
+  .ingredients-wrapper{
+    font-size: 30px;
   }
 
-  @media screen and (max-width: 740px) {
-
-    .ingredients-wrapper{
-        font-size: 30px;
-    }
-
-    .left-ingredients-wrapper {
-        margin: auto 15px;
-    }
-    .ingredient-wrapper {
-        width: 336px;
-        height: 53px;
-        font-size: 17px;
-    }
-    .ingredient-wrapper-text {
-        width: 75%;
-    }
+  .left-ingredients-wrapper {
+    margin: auto 15px;
   }
 
-/*-----------CARDS WITH RECYCLE PROCESS-----------*/
+  .ingredient-wrapper {
+    width: 336px;
+    height: 53px;
+    font-size: 17px;
+  }
+  
+  .ingredient-wrapper-text {
+    width: 75%;
+  }
+}
+
+/* ------------------ SECTION WITH RECYCLE PROCESS ------------------ */
 
 .cycle-wrapper {
   width: 100vw;
@@ -552,10 +588,10 @@ header i {
 }
 
 @media screen and (min-width: 740px) {
-    .h3-cycle {
+  .h3-cycle {
     text-align: center;
     font: var(--tablet-h3);
-    }
+  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -566,7 +602,7 @@ header i {
   }
 }
 
-/*-----------NEWSLETTER SIGN UP SECTION-----------*/
+/*----------- SECTION WITH NEWSLETTER SIGN UP -----------*/
 
 .newsletter-wrapper {
   background-color: #f2f2f2;
@@ -660,7 +696,8 @@ header i {
   }
 }
 
-/*----------FOOTER-----------*/
+/* ------------------ FOOTER SECTION ------------------ */
+
 footer {
   background-color: var(--dark-grey);
   font: var(--mobile-footer);
@@ -670,17 +707,21 @@ footer {
   flex-direction: column;
   align-items: center;
 }
+
 .footer-logo {
   width: 124px;
   order: 2;
   margin: 50px 0;
 }
+
 .footer-text-wrapper {
   order: 1;
 }
+
 .footer-nav {
   margin-top: 71px;
 }
+
 .footer-nav-ul {
   display: flex;
   flex-direction: column;
@@ -694,6 +735,7 @@ footer {
   gap: 23px;
   margin-top: 40px;
 }
+
 .social-media {
   height: 34px;
 }
@@ -703,20 +745,24 @@ footer {
     width: 732px;
     margin-top: 90px;
   }
+
   .footer-nav-ul {
     flex-direction: row;
     flex-wrap: wrap;
     row-gap: 61px;
     justify-content: center;
   }
+
   .social-media-wrapper {
     gap: 38px;
     margin-top: 60px;
   }
+
   .social-media {
     width: 56px;
     height: auto;
   }
+
   .footer-logo {
     width: 324px;
     margin-top: 95px;
@@ -729,87 +775,11 @@ footer {
     flex-direction: row;
     justify-content: space-evenly;
   }
+
   .footer-text-wrapper {
     order: 2;
   }
-  .footer-logo {
-    order: 1;
-    margin: 200px 0;
-  }
-}
 
-/*FOOTER*/
-footer {
-  background-color: var(--dark-grey);
-  font: var(--mobile-footer);
-  text-transform: uppercase;
-  color: var(--white);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.footer-logo {
-  width: 124px;
-  order: 2;
-  margin: 50px 0;
-}
-.footer-text-wrapper {
-  order: 1;
-}
-.footer-nav {
-  margin-top: 71px;
-}
-.footer-nav-ul {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 31px;
-}
-
-.social-media-wrapper {
-  display: flex;
-  justify-content: center;
-  gap: 23px;
-  margin-top: 40px;
-}
-.social-media {
-  height: 34px;
-}
-
-@media screen and (min-width: 740px) {
-  .footer-nav {
-    width: 732px;
-    margin-top: 90px;
-  }
-  .footer-nav-ul {
-    flex-direction: row;
-    flex-wrap: wrap;
-    row-gap: 61px;
-    justify-content: center;
-  }
-  .social-media-wrapper {
-    gap: 38px;
-    margin-top: 60px;
-  }
-  .social-media {
-    width: 56px;
-    height: auto;
-  }
-  .footer-logo {
-    width: 324px;
-    margin-top: 95px;
-    margin-bottom: 67px;
-  }
-}
-
-@media screen and (min-width: 1080px) {
-  footer {
-    flex-direction: row;
-    justify-content: space-evenly;
-  }
-  .footer-text-wrapper {
-    order: 2;
-  }
   .footer-logo {
     order: 1;
     margin: 200px 0;
