@@ -17,6 +17,7 @@
 
   --desktop-h1: bold 6.25rem "arial";
   --desktop-h2: bold 4.375rem "arial";
+  --desktop-h3: bold 3.0rem "arial";
 
   --tablet-h1: bold 4.375rem "arial";
   --tablet-h2: bold 2.5rem "arial";
@@ -427,23 +428,47 @@ header i {
 /*----------- INGREDIENTS -----------*/
 
 .ingredients-wrapper {
-
+    background: #F2F2F2;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    font: var(--desktop-h3);
+    
 }
 
 .left-ingredients-wrapper {
-
+    margin: auto 100px;
+    top: 50%;
+    width: 50%;
+    color: #333333;
 }
 
 .right-ingredients-wrapper {
-
+    margin: auto;
+    top: 50%;
+    width: 50%;
+    
 }
 
 .ingredient-wrapper {
-
+    width: 578px;
+    height: 89px;
+    margin: 45px 0;
+    display: flex;
+    font: var(--mobile-h3);
+    background: #FDFDFD;
+    justify-content: left;
+    align-items: center;
+    padding-left: 45px;
+    border-radius: 10px;
 }
 
-.chevron-down {
-    
+.ingredient-wrapper-text {
+    width: 90%;
+}
+
+.fa-chevron-down{
+    color: #E50036; 
 }
 
 /*-----------CARDS WITH RECYCLE PROCESS-----------*/
