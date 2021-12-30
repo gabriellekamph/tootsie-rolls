@@ -523,6 +523,7 @@ header i {
 
   .ingredients-wrapper{
     font-size: 30px;
+    height: 70vh;
   }
 
   .left-ingredients-wrapper {
