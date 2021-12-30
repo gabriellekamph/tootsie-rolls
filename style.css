@@ -19,7 +19,7 @@
 
   --mobile-h1: bold 2.5rem "arial";
   --mobile-h2: bold 1.25rem "arial";
-  --mobile-h3: bold 30px "arial";
+  --mobile-h3: bold 1.875rem "arial";
 
   --desktop-h1: bold 6.25rem "arial";
   --desktop-h2: bold 4.375rem "arial";
@@ -29,16 +29,16 @@
   --tablet-h2: bold 2.5rem "arial";
   --tablet-h3: bold 2.5rem "arial";
 
-  --mobile-paragraph: 15px "arial";
-  --mobile-disclaimer: 15px "arial";
-  --mobile-footer: bold 20px "arial";
-  --mobile-button-main: 18px "arial";
-  --mobile-button-disclaimer: 12px "arial";
+  --mobile-paragraph: 0.938rem "arial";
+  --mobile-disclaimer: 0.938rem "arial";
+  --mobile-footer: bold 1.25rem "arial";
+  --mobile-button-main: 1.125rem "arial";
+  --mobile-button-disclaimer: 0.75rem "arial";
 
-  --tablet-disclaimer: 25px "arial";
-  --desktop-disclaimer: 30px "arial";
-  --tablet-button-main: bold 30px "arial";
-  --tablet-button-disclaimer: bold 25px "arial";
+  --tablet-disclaimer: 1.563rem "arial";
+  --desktop-disclaimer: 1.875rem "arial";
+  --tablet-button-main: bold 1.875rem "arial";
+  --tablet-button-disclaimer: bold 1.563rem "arial";
 
   /* PADDING */
 
@@ -485,7 +485,7 @@ header i {
 .ingredients-wrapper {
   background: #F2F2F2;
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   font: var(--desktop-h3);
 }
@@ -536,7 +536,7 @@ header i {
 
   .ingredients-wrapper{
     font-size: 30px;
-    height: 70vh;
+    min-height: 70vh;
   }
 
   .left-ingredients-wrapper {
