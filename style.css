@@ -335,7 +335,6 @@ header i {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* justify-content: center; */
   position: relative;
 }
 
@@ -344,17 +343,14 @@ header i {
   color: var(--white);
   margin-top: 18vh;
   margin-bottom: 2vh;
-  /* margin-left: 10%; */
 }
 
 .hero-h2 {
   font: var(--mobile-h2);
   color: var(--white);
-  /* margin-left: 10%; */
 }
 
 .button-hero {
-  /* margin-left: 10%; */
   width: fit-content;
   margin-top: 5vh;
   font-weight: bold;
@@ -362,7 +358,6 @@ header i {
 
 .hero-wave {
   width: 100%;
-  /* max-height: 147px; */
   position: absolute;
   bottom: 0;
 }
