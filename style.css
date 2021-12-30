@@ -490,20 +490,20 @@ header i {
   min-height: 100vh;
   display: flex;
   font: var(--desktop-h3);
+  justify-content: space-evenly;
 }
 
 .left-ingredients-wrapper {
-  padding:auto;
-  margin: auto 100px;
-  top: 50%;
-  width: 50%;
-  color: #333333;
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  width: auto;  
 }
 
 .right-ingredients-wrapper {
   margin: auto;
   top: 50%;
-  width: 50%;  
+  width: auto;  
 }
 
 .ingredient-wrapper {
@@ -513,7 +513,7 @@ header i {
   display: flex;
   font: var(--mobile-h3);
   background: #FDFDFD;
-  justify-content: left;
+  justify-content: center;
   align-items: center;
   border-radius: 10px;
 }
@@ -528,7 +528,7 @@ header i {
   width: 80%;
 }
 
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 1400px) {
   .right-ingredients-wrapper {
     display: none;
   }
